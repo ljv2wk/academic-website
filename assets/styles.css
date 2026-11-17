@@ -49,3 +49,20 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-off
 @media(max-width:520px){.home-bio .eyebrow{font-size:.66rem;letter-spacing:.09em}.home-hero h1{font-size:clamp(1.65rem,8.7cqi,2.7rem);margin-bottom:20px}.teaching-courses{grid-template-columns:1fr;gap:15px}.teaching-courses .tile{min-height:0;padding:23px 17px}.book-chapter{padding:25px 0 16px}.book-section-heading{margin-top:38px}.centered-intro{padding-top:35px}}
 
 .book-intro h1,.centered-intro .lead,.book-chapter h3{text-wrap:balance}
+
+/* Centered research layout, with readable single-column publication and project entries. */
+.research-main{text-align:center}
+.research-main .chips,.research-main .actions{justify-content:center}
+.research-main .section{padding:50px 0 60px}
+.research-main .section>.container{max-width:840px}
+.research-main .section-heading{margin:0 auto 28px}
+.research-main .publication{display:block;border-top:1px solid var(--edge);border-bottom:0;padding:28px 0 30px}
+.research-main .publication:last-child{border-bottom:1px solid var(--edge)}
+.research-main .publication .pub-year{font-size:1rem;letter-spacing:.12em;margin:0 0 10px}
+.research-main .pub-title{font-size:clamp(1.45rem,2.55vw,1.9rem);max-width:780px;margin:0 auto 12px;text-wrap:balance}
+.research-main .publication article>p{max-width:730px;margin-inline:auto}
+.research-main .work{border-left:0;border-top:1px solid var(--edge);padding:29px 0;margin:0}
+.research-main .work h3{font-size:clamp(1.38rem,2.35vw,1.78rem);color:var(--blue);max-width:740px;margin:0 auto 12px;text-wrap:balance}
+.research-main .work p{max-width:720px;margin:auto;line-height:1.8}
+.research-main .work+.actions{border-top:1px solid var(--edge);padding-top:23px;margin-top:0}
+@media(max-width:520px){.research-main .section{padding:36px 0 44px}.research-main .publication,.research-main .work{padding:24px 0}.research-main .pub-meta{overflow-wrap:anywhere}}
